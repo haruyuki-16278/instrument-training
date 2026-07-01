@@ -9,7 +9,7 @@ export function PitchMeter({ bars }: PitchMeterProps) {
       <div className="flex h-24 items-end gap-1">
         {bars.map((bar, index) => (
           <div
-            key={`${index}-${bar}`}
+            key={index}
             className="flex-1 rounded-t bg-cyan-400/80"
             style={{ height: `${Math.max(4, bar)}%` }}
           />
