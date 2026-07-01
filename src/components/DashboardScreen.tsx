@@ -19,7 +19,9 @@ export function DashboardScreen({ records, stats, onBack }: DashboardScreenProps
           <StatCard label="総出題数" value={`${stats.totalAttempts}`} />
           <StatCard
             label="最速平均"
-            value={stats.bestSpeedAverageMs ? `${(stats.bestSpeedAverageMs / 1000).toFixed(2)}秒` : '--'}
+            value={
+              stats.bestSpeedAverageMs !== null ? `${(stats.bestSpeedAverageMs / 1000).toFixed(2)}秒` : '--'
+            }
           />
           <StatCard
             label="最高安定スコア"
