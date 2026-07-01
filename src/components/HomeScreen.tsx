@@ -53,6 +53,7 @@ export function HomeScreen({
             <button
               type="button"
               onClick={() => onModeChange('speed')}
+              aria-pressed={mode === 'speed'}
               className={`rounded-md px-3 py-2 text-sm font-semibold ${
                 mode === 'speed' ? 'bg-cyan-500 text-cyan-950' : 'bg-slate-800 text-slate-100'
               }`}
