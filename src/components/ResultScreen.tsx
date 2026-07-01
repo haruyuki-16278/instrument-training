@@ -33,7 +33,7 @@ export function ResultScreen({
             <Metric
               label="自己ベスト(平均)"
               value={
-                stats.bestSpeedAverageMs
+                stats.bestSpeedAverageMs !== null
                   ? `${(stats.bestSpeedAverageMs / 1000).toFixed(2)} 秒`
                   : '--'
               }
