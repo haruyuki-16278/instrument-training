@@ -45,3 +45,8 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## GitHub Pages デプロイ
+
+1. GitHub リポジトリの **Settings > Pages** で **Build and deployment** の **Source** を **GitHub Actions** に設定します。
+2. `main` ブランチに push すると `.github/workflows/deploy-pages.yml` が実行され、`dist/` を GitHub Pages にデプロイします。
