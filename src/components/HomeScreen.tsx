@@ -33,8 +33,8 @@ export function HomeScreen({
 
       <section className="grid gap-4 rounded-2xl border border-slate-700 bg-slate-900/60 p-5 md:grid-cols-3">
         <div>
-          <p className="mb-2 text-sm font-semibold text-slate-200">楽器</p>
-          <select
+          <label htmlFor="instrument-select" className="mb-2 text-sm font-semibold text-slate-200">楽器</label>
+          <select id="instrument-select"
             value={instrumentId}
             onChange={(event) => onInstrumentChange(event.target.value)}
             className="w-full rounded-md border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-slate-100"
